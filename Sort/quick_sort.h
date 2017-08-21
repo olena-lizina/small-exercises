@@ -1,5 +1,19 @@
-#ifndef QUICK_SORT_H
-#define QUICK_SORT_H
+#pragma once
+
+#include <iostream>
+#include <iomanip>
+
+/**
+ * @brief print array with formatting
+ */
+template<typename T>
+void printArr(T *pAr, int size)
+{
+    for (int i = 0; i < size; i++) {
+        std::cout << std::setw(4) << pAr[i] << " ";
+    }
+    std::cout << std::endl;
+}
 
 /**
  * @brief swap 2 elements in array
