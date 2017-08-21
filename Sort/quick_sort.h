@@ -29,7 +29,7 @@ int partition(T *pArr, int fromIndex, int toIndex)
         }
     }
 
-    if (pArr[toIndex] < pArr[i + 1]) {
+    if (pArr[toIndex] <= pArr[i + 1]) {
         swap(pArr, i + 1, toIndex);
     }
 

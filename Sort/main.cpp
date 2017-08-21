@@ -1,5 +1,6 @@
 #include <QCoreApplication>
 #include <iostream>
+#include <iomanip>
 
 #include "quick_sort.h"
 
@@ -7,7 +8,7 @@ template<typename T>
 void printArr(T *pAr, int size)
 {
     for (int i = 0; i < size; i++) {
-        std::cout << pAr[i] << " ";
+        std::cout << std::setw(4) << pAr[i] << " ";
     }
     std::cout << std::endl;
 }
